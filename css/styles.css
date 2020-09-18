@@ -307,12 +307,12 @@ body::before{
     color: var(--text-color);
     text-decoration: underline;
 }
-@media (max-width: 1139px) {
+@media screen and (max-width: 1139px) {
     :root{
         --width: 570px;
     }
 }
-@media (max-width: 680px) {
+@media screen and (max-width: 680px) {
     :root{
         --width: 260px;
     }
@@ -339,7 +339,7 @@ body::before{
         justify-content: space-between;
     }
 }
-@media (min-width: 1140px) {
+@media screen and (min-width: 1140px) {
     :root{
         --width: 1140px;
     }
