@@ -289,16 +289,18 @@ body{
 .attribution{
     position: relative;
     left:0;
+    bottom: 0;
     text-align: center;
     margin-top: 40px;
     font-size: 9px;
+    padding: 10px;
+    background-color: var(--bg-header);
 }
 .attribution a{
     text-decoration: none;
     color: var(--text-color);
     text-decoration: underline;
 }
-
 @media (max-width: 1139px) {
     :root{
         --width: 570px;
@@ -338,8 +340,8 @@ body{
     }
     .attribution{
         position: absolute;
-        bottom: 5px;
-        right: 5px;
+        bottom: 0;
+        right: 0;
         text-align: center;
         margin-top: 20px;
         font-size: 9px;
