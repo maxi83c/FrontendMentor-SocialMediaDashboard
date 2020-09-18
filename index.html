@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Frontend Mentor | Maximiliano Calabrese</title>
+
+</head>
+<body>
+  <div class="header">
+    <h1 class="header__title">Social Media Dashboard</h1>
+    <h2 class="header__subtitle" id="total-followers"></h2>
+      <div class="header__theme">
+        <span class="theme__text">Dark Mode</span>
+        <input type="checkbox" id="theme-mode" class="checkbox">
+        <label for="theme-mode" class="theme__switch"></label>
+      </div>
+  </div>    
+  <div class="cards-container">
+    <div class="card card--facebook" id="card-facebook">
+      <span class="card__account card__account--facebook"></span>
+      <span class="card__numbers"></span>
+      <span class="card__type">Followers</span>
+      <span class="card__today green"></span>
+    </div>
+    <div class="card card--twitter" id="card-twitter">
+      <span class="card__account card__account--twitter"></span>
+      <span class="card__numbers"></span>
+      <span class="card__type">Followers</span>
+      <span class="card__today green"></span>
+    </div>
+    <div class="card card--instagram" id="card-instagram">
+      <span class="card__account card__account--instagram"></span>
+      <span class="card__numbers"></span>
+      <span class="card__type">Followers</span>
+      <span class="card__today green"></span>
+    </div>
+    <div class="card card--youtube" id="card-youtube">
+      <span class="card__account card__account--youtube"></span>
+      <span class="card__numbers"></span>
+      <span class="card__type">Subscribers</span>
+      <span class="card__today red"></span>
+    </div>
+  </div> 
+  <h2 class="title">Overview - Today</h2>
+  <div class="overviews-container">
+    <div class="overviews-container__overview" id="facebook-pages">
+      <span class="overview__text overview__text--facebook">Page Views</span>
+      <span class="overview__numbers"></span>
+      <span class="overview__variation green"></span>
+    </div>
+    <div class="overviews-container__overview" id="facebook-likes">
+      <span class="overview__text overview__text--facebook">Likes</span>
+      <span class="overview__numbers"></span>
+      <span class="overview__variation red"></span>
+    </div>
+    <div class="overviews-container__overview" id="instagram-likes">
+      <span class="overview__text overview__text--instagram">Likes</span>
+      <span class="overview__numbers"></span>
+      <span class="overview__variation green"></span>
+    </div>
+    <div class="overviews-container__overview" id="instagram-views">
+      <span class="overview__text overview__text--instagram">Profile Views</span>
+      <span class="overview__numbers"></span>
+      <span class="overview__variation green"></span>
+    </div>
+    <div class="overviews-container__overview" id="twitter-retweets">
+      <span class="overview__text overview__text--twitter">Retweets</span>
+      <span class="overview__numbers"></span>
+      <span class="overview__variation green"></span>
+    </div>
+    <div class="overviews-container__overview" id="twitter-likes">
+      <span class="overview__text overview__text--twitter" >likes</span>
+      <span class="overview__numbers"></span>
+      <span class="overview__variation green"></span>
+    </div>
+    <div class="overviews-container__overview" id="youtube-likes">
+      <span class="overview__text overview__text--youtube">Likes</span>
+      <span class="overview__numbers"></span>
+      <span class="overview__variation red"></span>
+    </div>
+    <div class="overviews-container__overview" id="youtube-views">
+      <span class="overview__text overview__text--youtube">Total Views</span>
+      <span class="overview__numbers"></span>
+      <span class="overview__variation red"></span>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Maximiliano Calabrese</a>.
+  </div>
+  <script src="src/main.js"></script>
+</body>
+</html>
