@@ -19,9 +19,9 @@ const getRandomInt = (min, max) => {
 }
 
 const formatNumber = (number) => {
-  if (number > 999999)
+  if (number > 1999999)
     return `${Math.floor(number / 1000000)}M`
-  if (number > 9999)
+  if (number > 19999)
     return `${Math.floor(number / 1000)}K` 
   return `${number}`
 }
@@ -38,18 +38,16 @@ const overviews = [facebookPages, facebookLikes, instagramLikes, instagramViews,
 //Función para carga de datos del dashboard
 const setData = (socialObjet) => {
 
-  
-  
   let followers = 0;
   
   const selectedAccounts = getRandomInt(0, 3)
   
   cards.forEach((card, index) =>{
-    let socialFollowers = getRandomInt(0, 60000000)
+    let socialFollowers = getRandomInt(0, 999999)
     followers+= socialFollowers
     card.children[0].textContent = accounts[selectedAccounts][index]
     card.children[1].textContent = formatNumber(socialFollowers)
-    card.children[3].textContent = `${formatNumber(getRandomInt(0, 1999999))} Today`
+    card.children[3].textContent = `${formatNumber(getRandomInt(0, 9999))} Today`
   if (getRandomInt(0, 2) === 1)
       card.children[3].classList.add('green')
   else
