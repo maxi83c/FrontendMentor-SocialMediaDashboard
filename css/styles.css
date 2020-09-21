@@ -294,22 +294,6 @@ body::before{
     font-size: 12px;
     font-weight: 700;
 }
-.attribution{
-    position: relative;
-    width: 100%;
-    left:0;
-    bottom: 0;
-    text-align: center;
-    margin-top: 40px;
-    font-size: 9px;
-    padding: 10px;
-    background-color: var(--bg-header);
-}
-.attribution a{
-    text-decoration: none;
-    color: var(--text-color);
-    text-decoration: underline;
-}
 @media screen and (max-width: 1159px) {
     :root{
         --width: 570px;
@@ -369,8 +353,5 @@ body::before{
 @media screen and (min-width: 1160px) {
     :root{
         --width: 1140px;
-    }
-    .attribution{
-        position: absolute;
     }
 }
