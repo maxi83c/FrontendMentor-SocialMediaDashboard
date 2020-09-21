@@ -20,7 +20,6 @@
     --twitter-icon: url(../images/icon-twitter.svg);
     --instagram-icon: url(../images/icon-instagram.svg);
     --youtube-icon: url(../images/icon-youtube.svg);
-    -
 }
 
 *, *::before, *::after{
@@ -116,7 +115,7 @@ body::before{
 }
 .checkbox:checked + .theme__switch::before{
     transform: translateX(24px);
-    --bg-switch: white;
+    --bg-switch: hsl(0, 0%, 100%);
 }
 .checkbox:checked + .theme__switch{
     background: hsl(230, 22%, 74%);
