@@ -1,5 +1,6 @@
 :root{
     --bg-switch: hsl(230, 17%, 14%);
+    --bg-swich-gradient: linear-gradient(90deg, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 100%);
     --bg-header: hsl(232, 19%, 15%);
     --bg-body: hsl(230, 17%, 14%);
     --bg-card: hsl(228, 28%, 20%);
@@ -9,7 +10,7 @@
     --border-instagram: linear-gradient(90deg, hsl(37, 97%, 70%) 0%, hsl(329, 70%, 58%) 100%);
     --border-youtube: hsl(348, 97%, 39%);
     --color-activity: hsl(163, 72%, 41%);
-    --title-color: hsl(0, 0%, 100%);
+    --title-color: #fff;
     --text-color: hsl(228, 34%, 66%);
     --icon-url: '';
     --width: 1140px;
@@ -19,6 +20,7 @@
     --twitter-icon: url(../images/icon-twitter.svg);
     --instagram-icon: url(../images/icon-instagram.svg);
     --youtube-icon: url(../images/icon-youtube.svg);
+    -
 }
 
 *, *::before, *::after{
@@ -31,7 +33,7 @@ html{
 }
 body{
     margin: 0;
-    min-height: 100vh;;
+    min-height: 100%;
     background-color: var(--bg-body);
     color: var(--text-color);
     transition: background-color 0.8s;
@@ -84,7 +86,7 @@ body::before{
 .theme__switch{
     position: relative;
     display: block;
-    background: linear-gradient(90deg, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 100%);
+    background: var(--bg-swich-gradient);
     width: 48px;
     height: 24px;
     border-radius: 25px;
@@ -114,10 +116,13 @@ body::before{
 }
 .checkbox:checked + .theme__switch::before{
     transform: translateX(24px);
-    --bg-switch: hsl(0, 0%, 100%);
+    --bg-switch: white;
 }
 .checkbox:checked + .theme__switch{
     background: hsl(230, 22%, 74%);
+}
+.checkbox:checked + .theme__switch:hover{
+    background-image: var(--bg-swich-gradient)
 }
 .cards-container{
     width: var(--width);
@@ -315,13 +320,13 @@ body::before{
     :root{
         --width: 326px;
     }
+    body::before{
+        height: 235px;
+    }
     .header{
         width: 326px;
         position: relative;
         margin-top: 20px;
-    }
-    body::before{
-        height: 235px;
     }
     .header__title, .title{
         font-size: 25px;
@@ -365,5 +370,8 @@ body::before{
 @media screen and (min-width: 1160px) {
     :root{
         --width: 1140px;
+    }
+    .attribution{
+        position: absolute;
     }
 }
