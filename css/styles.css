@@ -32,6 +32,7 @@ html{
 }
 body{
     margin: 0;
+    padding-bottom: 50px;
     min-height: 100%;
     background-color: var(--bg-body);
     color: var(--text-color);
@@ -348,9 +349,6 @@ body::before{
     .overview{
         width: 326px;
         margin-top: 16px;
-    }
-    .overview:last-child{
-        margin-bottom: 50px;
     }
 }
 @media screen and (min-width: 1160px) {
