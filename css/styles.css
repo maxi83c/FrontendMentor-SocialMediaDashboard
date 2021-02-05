@@ -349,6 +349,9 @@ body::before{
         width: 326px;
         margin-top: 16px;
     }
+    .overview:last-child{
+        margin-bottom: 50px;
+    }
 }
 @media screen and (min-width: 1160px) {
     :root{
